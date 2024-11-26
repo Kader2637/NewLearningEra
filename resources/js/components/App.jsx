@@ -49,7 +49,7 @@ const App = () => {
                                 <div className="tgmenu__wrap">
                                     <nav className="tgmenu__nav">
                                         <div className="logo">
-                                            <a href="index-2.html"><img src="assets/img/logo/logo.svg" alt="Logo" /></a>
+                                            <NavLink to="/"><img src="assets/img/logo/logo.png" alt="Logo" width="200px" /></NavLink>
                                         </div>
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                             <ul className="navigation">
