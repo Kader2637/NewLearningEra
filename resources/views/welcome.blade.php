@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    <div class="" id="preloader"></div>
+
     <div class="" id="app"></div>
 
 

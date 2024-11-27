@@ -24,6 +24,7 @@ class UpdateCourseRequest extends FormRequest
         return [
             'name' => 'required',
             'description' => 'required',
+            'category_course_id' => 'required',
             'thumbnail' => 'required'
         ];
     }

@@ -26,6 +26,7 @@ class CourseController extends Controller
         $course = Course::create([
             'name' => $request->name,
             'description' => $request->description,
+            'category_course_id' => $request->category_course_id,
             'thumbnail' => $request->file('thumbnail')->store('thumbnails')
         ]);
 
@@ -58,6 +59,7 @@ class CourseController extends Controller
         $course->update([
             'name' => $request->name,
             'description' => $request->description,
+            'category_course_id' => $request->category_course_id,
             'thumbnail' => $request->hasFile('thumbnail')
                 ? $request->file('thumbnail')->store('thumbnails')
                 : $course->thumbnail
