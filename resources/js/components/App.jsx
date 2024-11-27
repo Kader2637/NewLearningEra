@@ -61,11 +61,6 @@ const App = () => {
                                                 <i className="fab fa-linkedin-in"></i>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-youtube"></i>
-                                            </a>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -180,9 +175,9 @@ const App = () => {
                                         <div className="tgmenu__action">
                                             <ul className="list-wrap">
                                                 <li className="header-btn login-btn">
-                                                    <a href="login.html">
+                                                    <NavLink to="/login">
                                                         Log in
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </div>

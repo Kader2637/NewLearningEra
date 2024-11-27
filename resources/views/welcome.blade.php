@@ -45,7 +45,7 @@
 <body>
 
     <div class="" id="app"></div>
-
+    @include('Footer')
 
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
