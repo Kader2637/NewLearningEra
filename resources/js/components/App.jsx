@@ -37,9 +37,7 @@ const App = () => {
                                             alt="Icon"
                                         />
                                         Hubungi:{" "}
-                                        <a href="0987654321">
-                                            +62 0987654321
-                                        </a>
+                                        <a href="0987654321">+62 0987654321</a>
                                     </div>
                                     <ul className="tg-header__top-social list-wrap">
                                         <li>Follow Us On:</li>
@@ -93,18 +91,39 @@ const App = () => {
                                         </div>
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                             <ul className="navigation">
-                                                <li className="active">
-                                                    <NavLink to="/">
+                                                <li
+                                                    className={
+                                                        location.pathname ===
+                                                        "/"
+                                                            ? "active"
+                                                            : ""
+                                                    }
+                                                >
+                                                    <NavLink to="/" end>
                                                         Dashboard
                                                     </NavLink>
                                                 </li>
-                                                <li>
-                                                    <NavLink to="about">
+                                                <li
+                                                    className={
+                                                        location.pathname ===
+                                                        "/about"
+                                                            ? "active"
+                                                            : ""
+                                                    }
+                                                >
+                                                    <NavLink to="/about">
                                                         About Us
                                                     </NavLink>
                                                 </li>
-                                                <li>
-                                                    <NavLink to="course">
+                                                <li
+                                                    className={
+                                                        location.pathname ===
+                                                        "/course"
+                                                            ? "active"
+                                                            : ""
+                                                    }
+                                                >
+                                                    <NavLink to="/course">
                                                         Course
                                                     </NavLink>
                                                 </li>
