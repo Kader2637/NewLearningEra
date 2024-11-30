@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Router from "../router/Index";
 import { NavLink } from "react-router-dom";
 
 const App = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    useEffect(() => {
+        const token = localStorage.getItem("authToken");
+        setIsLoggedIn(!!token);
+    }, []);
+
+    const handleLogout = () => {
+        localStorage.removeItem("authToken");
+        localStorage.removeItem("user");
+        setIsLoggedIn(false);
+    };
     return (
         <div>
             <header>
@@ -13,10 +25,10 @@ const App = () => {
                                 <ul className="tg-header__top-info list-wrap">
                                     <li>
                                         <img
-                                            src="assets/img/icons/map_marker.svg"
+                                            src="http://127.0.0.1:8000/assets/img/icons/map_marker.svg"
                                             alt="Icon"
                                         />
-                                        <span>Kota malang,Jawa Timur</span>
+                                        <span>Kota Malang, Jawa Timur</span>
                                     </li>
                                     <li>
                                         <img
@@ -86,99 +98,41 @@ const App = () => {
                                         </div>
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                             <ul className="navigation">
-                                                <li
-                                                    className={
-                                                        location.pathname ===
-                                                        "/"
-                                                            ? "active"
-                                                            : ""
-                                                    }
-                                                >
+                                                <li>
                                                     <NavLink to="/" end>
                                                         Dashboard
                                                     </NavLink>
                                                 </li>
-                                                <li
-                                                    className={
-                                                        location.pathname ===
-                                                        "/about"
-                                                            ? "active"
-                                                            : ""
-                                                    }
-                                                >
+                                                <li>
                                                     <NavLink to="/about">
-                                                        About Us
+                                                        Tentang Kami
                                                     </NavLink>
                                                 </li>
-                                                <li
-                                                    className={
-                                                        location.pathname ===
-                                                        "/course"
-                                                            ? "active"
-                                                            : ""
-                                                    }
-                                                >
+                                                <li>
                                                     <NavLink to="/course">
-                                                        Course
+                                                        Kelas
                                                     </NavLink>
                                                 </li>
                                             </ul>
                                         </div>
-                                        {/* <div className="tgmenu__search d-none d-md-block">
-                                            <form
-                                                action="#"
-                                                className="tgmenu__search-form"
-                                            >
-                                                <div className="select-grp">
-                                                    <select
-                                                        className="form-select"
-                                                        id="course-cat"
-                                                        aria-label="Default select example"
-                                                        style={{
-                                                            width: "150px",
-                                                        }}
-                                                    >
-                                                        <option
-                                                            selected
-                                                            disabled
-                                                        >
-                                                            Categories
-                                                        </option>
-                                                        <option value="1">
-                                                            Business
-                                                        </option>
-                                                        <option value="2">
-                                                            Data Science
-                                                        </option>
-                                                        <option value="3">
-                                                            Art & Design
-                                                        </option>
-                                                        <option value="4">
-                                                            Marketing
-                                                        </option>
-                                                        <option value="5">
-                                                            Finance
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                                <div className="input-grp">
-                                                    <input
-                                                        type="text"
-                                                        placeholder="Search For Course . . ."
-                                                    />
-                                                    <button type="submit">
-                                                        <i className="flaticon-search"></i>
-                                                    </button>
-                                                </div>
-                                            </form>
-                                        </div> */}
                                         <div className="tgmenu__action">
                                             <ul className="list-wrap">
-                                                <li className="header-btn login-btn">
-                                                    <NavLink to="/login">
-                                                        Log in
-                                                    </NavLink>
-                                                </li>
+                                                {isLoggedIn ? (
+                                                    <li className="header-btn login-btn">
+                                                        <button
+                                                            onClick={handleLogout}
+                                                            className="btn btn-danger"
+                                                        >
+                                                            Log out
+                                                        </button>
+                                                    </li>
+                                                ) : (
+                                                    <li className="header-btn login-btn">
+                                                        <NavLink to="/login">
+                                                            Log in
+                                                        </NavLink>
+                                                    </li>
+                                                )}
                                             </ul>
                                         </div>
                                         <div className="mobile-login-btn">
@@ -195,68 +149,6 @@ const App = () => {
                                         </div>
                                     </nav>
                                 </div>
-
-                                {/* Mobile Menu  */}
-                                <div className="tgmobile__menu">
-                                    <nav className="tgmobile__menu-box">
-                                        <div className="close-btn">
-                                            <i className="tg-flaticon-close-1"></i>
-                                        </div>
-                                        <div className="nav-logo">
-                                            <a href="index-2.html">
-                                                <img
-                                                    src="assets/img/logo/logo.svg"
-                                                    alt="Logo"
-                                                />
-                                            </a>
-                                        </div>
-                                        <div className="tgmobile__search">
-                                            <form action="#">
-                                                <input
-                                                    type="text"
-                                                    placeholder="Search here..."
-                                                />
-                                                <button>
-                                                    <i className="fas fa-search"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div className="tgmobile__menu-outer">
-                                            {/* Here Menu Will Come Automatically Via Javascript / Same Menu as in Header */}
-                                        </div>
-                                        <div className="social-links">
-                                            <ul className="list-wrap">
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fab fa-linkedin-in"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fab fa-youtube"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div className="tgmobile__menu-backdrop"></div>
-                                {/* End Mobile Menu */}
                             </div>
                         </div>
                     </div>

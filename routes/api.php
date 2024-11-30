@@ -2,9 +2,13 @@
 
 use App\Http\Controllers\Api\CategoryCourseController;
 use App\Http\Controllers\Api\CourseController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+
+Route::post('/actionLogin', [LoginController::class, 'login']);
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
@@ -23,3 +27,4 @@ Route::post('CreatecategoryCourse' , [CategoryCourseController::class , 'store']
 Route::put('UpdatecategoryCourse/{categoryCourse}' , [CategoryCourseController::class , 'update']);
 Route::delete('DeletecategoryCourse/{categoryCourse}' , [CategoryCourseController::class , 'destroy']);
 
+    
