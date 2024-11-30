@@ -63,7 +63,7 @@ const Footer = () => {
                                 <h4 className="footer__widget-title">Maps</h4>
                                 <div className="footer__contact-content">
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.176419840137!2d110.36639701477896!3d-7.798126994443247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a2e3ab3e3b5e5%3A0x9b79c7a0f8d2c8e0!2sIndonesia!5e0!3m2!1sen!2sid!4v1616161616161!5m2!1sen!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63219.15529079024!2d112.59058342461867!3d-7.978558312256583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Kota%20Malang%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1732950851150!5m2!1sid!2sid"
                                         width="450"
                                         height="250"
                                         style={{ border: "0" }}
