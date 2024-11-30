@@ -21,5 +21,5 @@ Route::get('categoryCourse' , [CategoryCourseController::class , 'index']);
 Route::get('categoryCourseShow' , [CategoryCourseController::class , 'show']);
 Route::post('CreatecategoryCourse' , [CategoryCourseController::class , 'store']);
 Route::put('UpdatecategoryCourse/{categoryCourse}' , [CategoryCourseController::class , 'update']);
-Route::destroy('DeletecategoryCourse/{categoryCourse}' , [CategoryCourseController::class , 'destroy']);
+Route::delete('DeletecategoryCourse/{categoryCourse}' , [CategoryCourseController::class , 'destroy']);
 

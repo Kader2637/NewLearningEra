@@ -11,7 +11,7 @@ const Thumbnail = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="breadcrumb__content">
-                            <h3 className="title">All Courses</h3>
+                            <h3 className="title">Semua Kelas</h3>
                             <nav className="breadcrumb">
                                 <span
                                     property="itemListElement"
