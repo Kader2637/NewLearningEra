@@ -13,7 +13,7 @@ const App = () => {
     const handleLogout = () => {
         localStorage.removeItem("authToken");
         localStorage.removeItem("user");
-        setIsLoggedIn(false);
+        window.location.href = "/"
     };
     return (
         <div>
@@ -90,7 +90,7 @@ const App = () => {
                                         <div className="logo">
                                             <NavLink to="/">
                                                 <img
-                                                    src="assets/img/logo/logo.png"
+                                                    src="http://127.0.0.1:8000/assets/img/logo/logo.png"
                                                     alt="Logo"
                                                     width="200px"
                                                 />

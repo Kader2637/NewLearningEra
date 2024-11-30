@@ -1,11 +1,28 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const CardLogin = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const user = localStorage.getItem("user");
+        if (user) {
+            const userData = JSON.parse(user);
+            if (userData.role) {
+                if (userData.role === "admin") {
+                    window.location.href = "/dashboard/admin";
+                } else if (userData.role === "teacher") {
+                    window.location.href = "/dashboard/teacher";
+                } else if (userData.role === "student") {
+                    window.location.href = "/dashboard/student";
+                }
+            }
+        }
+    }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,10 +41,16 @@ const CardLogin = () => {
                 localStorage.setItem("authToken", token);
                 localStorage.setItem("user", JSON.stringify(user));
 
-                window.location.href = "/dashboard/student";
+                if (user.role === "admin") {
+                    window.location.href = "/dashboard/admin";
+                } else if (user.role === "teacher") {
+                    window.location.href = "/dashboard/teacher";
+                } else if (user.role === "student") {
+                    window.location.href = "/dashboard/student";
+                }
             })
             .catch((err) => {
-                setError("Login gagal. Silakan periksa kredensial Anda.");
+                setError("Login gagal. Password atau email Anda salah.");
             });
     };
 
@@ -43,12 +66,20 @@ const CardLogin = () => {
                                 sandi Anda di bawah ini.
                             </p>
                             {error && (
-                                <div className="card card-error">
-                                    <div className="card-body">
-                                        <h4 className="error">{error}</h4>
-                                    </div>
+                                <div
+                                    className="alert alert-danger alert-dismissible fade show"
+                                    role="alert"
+                                >
+                                    <strong>Error!</strong> {error}
+                                    <button
+                                        type="button"
+                                        className="btn-close"
+                                        data-bs-dismiss="alert"
+                                        aria-label="Close"
+                                    ></button>
                                 </div>
                             )}
+
                             <form
                                 onSubmit={handleSubmit}
                                 className="account__form"

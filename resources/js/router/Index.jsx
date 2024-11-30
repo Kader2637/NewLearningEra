@@ -1,5 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import PrivateRoute from "./PrivateRoute";
+import { ToastContainer } from "react-toastify";
 
 import Home from "../components/HomePage";
 import About from "../components/AboutPage";
@@ -18,9 +20,18 @@ const Index = () => {
                 <Route path="/register" element={<RegisterPage />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/course" element={<CoursePage />} />
-                <Route path="/dashboard/student" element={<DashboardPageStudent />} />
+                <Route
+                    path="/dashboard/student"
+                    element={
+                        <PrivateRoute
+                            element={<DashboardPageStudent />}
+                            allowedRoles={["student"]}
+                        />
+                    }
+                />
                 <Route path="/*" element={<Notfound />} />
             </Routes>
+            <ToastContainer />
         </div>
     );
 };

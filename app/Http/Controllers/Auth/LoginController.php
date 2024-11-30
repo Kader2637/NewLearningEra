@@ -38,7 +38,7 @@ class LoginController extends Controller
                 ],
             ], 200);
         } else {
-            return response()->json(['message' => 'Login gagal. Silakan periksa kredensial Anda.'], 401);
+return response()->json(['message' => 'Password atau email Anda salah.'], 401);
         }
     }
 }

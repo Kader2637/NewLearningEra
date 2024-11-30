@@ -1,11 +1,10 @@
 import React from 'react'
+import ThumbnailStudent from './ThumbnailStudent'
 
 const DashboardPageStudent = () => {
   return (
     <div>
-        <h1>
-            ini dashboard Siswa
-        </h1>
+        <ThumbnailStudent />
     </div>
   )
 }

@@ -50,9 +50,6 @@
 
 <body>
     @yield('content')
-
-    @include('Landingpage.Footer')
-
     <!-- External JS Libraries -->
     <script src="{{ asset('assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
