@@ -48,8 +48,14 @@ const App = () => {
                             <div className="col-12">
                                 <div className="tgmenu__wrap">
                                     <nav className="tgmenu__nav">
-                                        <div className="logo">
-                                            <a href="index-2.html"><img src="assets/img/logo/logo.svg" alt="Logo" /></a>
+                                    <div className="logo">
+                                        <a href="index-2.html">
+                                            <img 
+                                            src="assets/img/logo/logo.jpeg" 
+                                            alt="Logo" 
+                                            style={{ width: '200px', height: 'auto' }} 
+                                            />
+                                        </a>
                                         </div>
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                             <ul className="navigation">
