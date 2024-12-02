@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('code_class');
+            $table->enum('access' , ['public' , 'private']);
             $table->timestamps();
         });
     }

@@ -10,7 +10,7 @@ const Card = () => {
             category: "Development",
             rating: 4.8,
             price: "$15.00",
-            link: "course-details.html",
+            link: "",
         },
         {
             id: 2,
@@ -20,7 +20,7 @@ const Card = () => {
             category: "Design",
             rating: 4.5,
             price: "$19.00",
-            link: "course-details.html",
+            link: "",
         },
         {
             id: 3,
@@ -30,7 +30,7 @@ const Card = () => {
             category: "Marketing",
             rating: 4.3,
             price: "$24.00",
-            link: "course-details.html",
+            link: "",
         },
         {
             id: 4,
@@ -40,7 +40,7 @@ const Card = () => {
             category: "Development",
             rating: 4.9,
             price: "$20.00",
-            link: "course-details.html",
+            link: "",
         },
         {
             id: 1,
@@ -50,7 +50,7 @@ const Card = () => {
             category: "Development",
             rating: 4.8,
             price: "$15.00",
-            link: "course-details.html",
+            link: "",
         },
         {
             id: 2,
@@ -60,7 +60,7 @@ const Card = () => {
             category: "Design",
             rating: 4.5,
             price: "$19.00",
-            link: "course-details.html",
+            link: "",
         },
         {
             id: 3,
@@ -70,7 +70,7 @@ const Card = () => {
             category: "Marketing",
             rating: 4.3,
             price: "$24.00",
-            link: "course-details.html",
+            link: "",
         },
         {
             id: 4,
@@ -80,7 +80,7 @@ const Card = () => {
             category: "Development",
             rating: 4.9,
             price: "$20.00",
-            link: "course-details.html",
+            link: "",
         },
     ];
 
@@ -111,7 +111,7 @@ const Card = () => {
                                 <div className="courses__item-content">
                                     <ul className="courses__item-meta list-wrap">
                                         <li className="courses__item-tag">
-                                            <a href="course.html">
+                                            <a href="">
                                                 {course.category}
                                             </a>
                                         </li>
@@ -151,13 +151,13 @@ const Card = () => {
                                 <a href="#">1</a>
                             </li>
                             <li>
-                                <a href="courses.html">2</a>
+                                <a href="#">2</a>
                             </li>
                             <li>
-                                <a href="courses.html">3</a>
+                                <a href="#">3</a>
                             </li>
                             <li>
-                                <a href="courses.html">4</a>
+                                <a href="#">4</a>
                             </li>
                         </ul>
                     </nav>
