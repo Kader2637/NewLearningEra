@@ -14,7 +14,7 @@ const Banner = () =>{
                 <div className="col-xl-5 col-lg-6">
                     <div className="banner__content-two">
                         <h3
-                            className="title"
+                            className="title "
                             data-aos="fade-right"
                             data-aos-delay="400"
                         >
@@ -63,19 +63,12 @@ const Banner = () =>{
                         </div>
                     </div>
                 </div>
-                <div className="col-xl-7 col-lg-6 col-md-8">
-                    <div className="banner__images-two tg-svg">
+                <div className="col-xl-6 col-lg-6 col-md-8 d-flex  justify-content-center">
                         <img
                             src="assets/img/banner/bannerlandingpage.png"
                             alt="Banner"
                             className="main-img "
                         />
-                        <span
-                            className="svg-icon"
-                            id="banner-svg"
-                            data-svg-icon="assets/img/banner/h2_banner_shape02.svg"
-                        ></span>
-                    </div>
                 </div>
             </div>
         </div>
