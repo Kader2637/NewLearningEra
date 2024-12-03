@@ -10,6 +10,9 @@ import RegisterPage from "../Pages/Auth/Register/RegisterPage";
 import DashboardPageStudent from "../Pages/Student/Dashboard/DashboardPageStudent";
 import AboutPage from "../Pages/AboutUs/AboutPage";
 import HomePage from "../Pages/Home/HomePage";
+import Kader from "./Kader";
+import Erik from "./Erik";
+import Ivan from "./Ivan";
 
 const Index = () => {
     return (
@@ -20,6 +23,9 @@ const Index = () => {
                 <Route path="/register" element={<RegisterPage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/course" element={<CoursePage />} />
+                <Kader />
+                <Erik />
+                <Ivan />
                 <Route
                     path="/dashboard/student"
                     element={
