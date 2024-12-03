@@ -24,7 +24,7 @@ class StoreCourseRequest extends FormRequest
         return [
             'name' => 'required',
             'description' => 'required',
-            'category_course_id' => 'required',
+            'classroom_id' => 'required',
             'thumbnail' => 'required'
         ];
     }

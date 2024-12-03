@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('classrooms', function (Blueprint $table) {
             $table->id();
+            $table->text('thumbnail');
             $table->string('name');
             $table->string('code_class');
             $table->enum('access' , ['public' , 'private']);
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }
