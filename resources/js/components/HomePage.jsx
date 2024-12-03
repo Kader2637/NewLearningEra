@@ -52,7 +52,7 @@ const HomePage = () => {
                                     data-aos="fade-right"
                                     data-aos-delay="400"
                                 >
-                                    Learning is
+                                    New Learning
                                     <span className="position-relative">
                                         <svg
                                             x="0px"
@@ -67,9 +67,9 @@ const HomePage = () => {
                                                 fill="currentcolor"
                                             />
                                         </svg>
-                                        What You
+                                        Era
                                     </span>
-                                    Make of it. Make it Yours at SkillGro.
+
                                 </h3>
                                 <div
                                     className="banner__btn-two"
@@ -80,7 +80,7 @@ const HomePage = () => {
                                         href="contact.html"
                                         className="btn arrow-btn"
                                     >
-                                        Start Free Trial{" "}
+                                        Tentang Kami{" "}
                                         <img
                                             src="assets/img/icons/right_arrow.svg"
                                             alt="Right arrow icon"
@@ -91,8 +91,7 @@ const HomePage = () => {
                                         href="https://www.youtube.com/watch?v=b2Az7_lLh3g"
                                         className="play-btn popup-video"
                                     >
-                                        <i className="fas fa-play"></i> Watch
-                                        Our <br /> Class Demo
+                                        <i className="fas fa-play"></i>Trio Of <br /> Innofator
                                     </a>
                                 </div>
                             </div>
@@ -100,56 +99,16 @@ const HomePage = () => {
                         <div className="col-xl-7 col-lg-6 col-md-8">
                             <div className="banner__images-two tg-svg">
                                 <img
-                                    src="assets/img/banner/h2_banner_img.png"
+                                    src="assets/img/banner/bannerlandingpage.png"
                                     alt="Banner"
-                                    className="main-img"
+                                    className="main-img "
                                 />
-                                <div
-                                    className="shape big-shape"
-                                    data-aos="fade-up"
-                                    data-aos-delay="600"
-                                >
-                                    <img
-                                        src="assets/img/banner/h2_banner_shape01.svg"
-                                        alt="Shape decoration"
-                                        className="injectable tg-motion-effects1"
-                                    />
-                                </div>
                                 <span
                                     className="svg-icon"
                                     id="banner-svg"
                                     data-svg-icon="assets/img/banner/h2_banner_shape02.svg"
                                 ></span>
-                                <div
-                                    className="about__enrolled"
-                                    data-aos="fade-right"
-                                    data-aos-delay="200"
-                                >
-                                    <p className="title">
-                                        <span>36K+</span> Enrolled Students
-                                    </p>
-                                    <img
-                                        src="assets/img/others/student_grp.png"
-                                        alt="Group of students"
-                                    />
-                                </div>
-                                <div
-                                    className="banner__student"
-                                    data-aos="fade-left"
-                                    data-aos-delay="200"
-                                >
-                                    <div className="icon">
-                                        <img
-                                            src="assets/img/banner/h2_banner_icon.svg"
-                                            alt="Student icon"
-                                            className="injectable"
-                                        />
-                                    </div>
-                                    <div className="content">
-                                        <span>Total Students</span>
-                                        <h4 className="title">15K</h4>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -2039,231 +1998,6 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <footer class="footer__area footer__area-two">
-                <div class="footer__top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-4 col-md-6">
-                                <div class="footer__widget">
-                                    <div class="logo mb-35">
-                                        <a href="index-2.html">
-                                            <img
-                                                src="assets/img/logo/secondary_logo.svg"
-                                                alt="img"
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="footer__content">
-                                        <p>
-                                            when an unknown printer took galley
-                                            of type and scrambled it to make
-                                            pspecimen bookt has.
-                                        </p>
-                                        <ul class="list-wrap">
-                                            <li>463 7th Ave, NY 10018, USA</li>
-                                            <li>+123 88 9900 456</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                                <div class="footer__widget">
-                                    <h4 class="footer__widget-title">
-                                        Useful Links
-                                    </h4>
-                                    <div class="footer__link">
-                                        <ul class="list-wrap">
-                                            <li>
-                                                <a href="events-details.html">
-                                                    Our values
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="events-details.html">
-                                                    Our advisory board
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="events-details.html">
-                                                    Our partners
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="events-details.html">
-                                                    Become a partner
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="events-details.html">
-                                                    Work at Future Learn
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="events-details.html">
-                                                    Quizlet Plus
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                                <div class="footer__widget">
-                                    <h4 class="footer__widget-title">
-                                        Our Company
-                                    </h4>
-                                    <div class="footer__link">
-                                        <ul class="list-wrap">
-                                            <li>
-                                                <a href="contact.html">
-                                                    Contact Us
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="instructor-details.html">
-                                                    Become Teacher
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Blog</a>
-                                            </li>
-                                            <li>
-                                                <a href="instructor-details.html">
-                                                    Instructor
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="events-details.html">
-                                                    Events
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6">
-                                <div class="footer__widget">
-                                    <h4 class="footer__widget-title">
-                                        Get In Touch
-                                    </h4>
-                                    <div class="footer__contact-content">
-                                        <p>
-                                            when an unknown printer took <br />{" "}
-                                            galley type and scrambled
-                                        </p>
-                                        <ul class="list-wrap footer__social">
-                                            <li>
-                                                <a
-                                                    href="https://www.facebook.com/"
-                                                    target="_blank"
-                                                >
-                                                    <img
-                                                        src="assets/img/icons/facebook.svg"
-                                                        alt="img"
-                                                        class="injectable"
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="https://www.facebook.com/"
-                                                    target="_blank"
-                                                >
-                                                    <img
-                                                        src="assets/img/icons/twitter.svg"
-                                                        alt="img"
-                                                        class="injectable"
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="https://www.facebook.com/"
-                                                    target="_blank"
-                                                >
-                                                    <img
-                                                        src="assets/img/icons/whatsapp.svg"
-                                                        alt="img"
-                                                        class="injectable"
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="https://www.facebook.com/"
-                                                    target="_blank"
-                                                >
-                                                    <img
-                                                        src="assets/img/icons/instagram.svg"
-                                                        alt="img"
-                                                        class="injectable"
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="https://www.facebook.com/"
-                                                    target="_blank"
-                                                >
-                                                    <img
-                                                        src="assets/img/icons/youtube.svg"
-                                                        alt="img"
-                                                        class="injectable"
-                                                    />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="app-download">
-                                        <a href="#">
-                                            <img
-                                                src="assets/img/others/google-play.svg"
-                                                alt="img"
-                                            />
-                                        </a>
-                                        <a href="#">
-                                            <img
-                                                src="assets/img/others/apple-store.svg"
-                                                alt="img"
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__bottom">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-7">
-                                <div class="copy-right-text">
-                                    <p>
-                                        © 2010-2024 skillgro.com. All rights
-                                        reserved.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="footer__bottom-menu">
-                                    <ul class="list-wrap">
-                                        <li>
-                                            <a href="contact.html">
-                                                Term of Use
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">
-                                                Privacy Policy
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     );
 };

@@ -5,6 +5,7 @@ const AboutPage = () => {
         <section
             className="breadcrumb__area breadcrumb__bg"
             data-background="assets/img/bg/breadcrumb_bg.jpg"
+            
         >
             <div className="container">
                 <div className="row">
