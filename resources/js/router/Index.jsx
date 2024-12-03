@@ -10,9 +10,6 @@ import RegisterPage from "../Pages/Auth/Register/RegisterPage";
 import DashboardPageStudent from "../Pages/Student/Dashboard/DashboardPageStudent";
 import AboutPage from "../Pages/AboutUs/AboutPage";
 import HomePage from "../Pages/Home/HomePage";
-import Kader from "./Kader";
-import Erik from "./Erik";
-import Ivan from "./Ivan";
 
 const Index = () => {
     return (
