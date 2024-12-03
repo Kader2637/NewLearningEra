@@ -57,7 +57,7 @@ const Instructor = () => {
                                     <div class="instructor__thumb-two">
                                         <img
                                             src="assets/img/instructor/siswa.png"
-                                            width="300px"
+                                            width="200px"
                                             alt="img"
                                         />
                                         <div class="shape-one">
