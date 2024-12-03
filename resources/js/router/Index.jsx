@@ -3,21 +3,13 @@ import { Routes, Route } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 import { ToastContainer } from "react-toastify";
 
-<<<<<<< Updated upstream
-import Home from "../components/HomePage";
-=======
-import About from "../components/AboutPage";
->>>>>>> Stashed changes
 import Notfound from "../components/NotfoundPage";
 import CoursePage from "../Pages/Course/CoursePage";
 import LoginPage from "../Pages/Auth/Login/LoginPage";
 import RegisterPage from "../Pages/Auth/Register/RegisterPage";
 import DashboardPageStudent from "../Pages/Student/Dashboard/DashboardPageStudent";
-<<<<<<< Updated upstream
 import AboutPage from "../Pages/AboutUs/AboutPage";
-=======
 import HomePage from "../Pages/Home/HomePage";
->>>>>>> Stashed changes
 
 const Index = () => {
     return (
