@@ -76,7 +76,9 @@ const App = () => {
                                                     <>
                                                         <li className="header-btn login-btn">
                                                             <button
-                                                                onClick={navigateHome}
+                                                                onClick={
+                                                                    navigateHome
+                                                                }
                                                                 className="btn btn-primary"
                                                             >
                                                                 Masuk
@@ -84,7 +86,9 @@ const App = () => {
                                                         </li>
                                                         <li className="header-btn login-btn">
                                                             <button
-                                                                onClick={handleLogout}
+                                                                onClick={
+                                                                    handleLogout
+                                                                }
                                                                 className="btn btn-danger"
                                                             >
                                                                 Log out
