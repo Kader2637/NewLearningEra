@@ -14,9 +14,9 @@ const CardLogin = () => {
             const userData = JSON.parse(user);
             if (userData.role) {
                 if (userData.role === "admin") {
-                    window.location.href = "/dashboard/admin";
+                    window.location.href = "/admin";
                 } else if (userData.role === "teacher") {
-                    window.location.href = "/dashboard/teacher";
+                    window.location.href = "/teacher";
                 } else if (userData.role === "student") {
                     window.location.href = "/dashboard/student";
                 }
@@ -42,9 +42,9 @@ const CardLogin = () => {
                 localStorage.setItem("user", JSON.stringify(user));
 
                 if (user.role === "admin") {
-                    window.location.href = "/dashboard/admin";
+                    window.location.href = "/admin";
                 } else if (user.role === "teacher") {
-                    window.location.href = "/dashboard/teacher";
+                    window.location.href = "/teacher";
                 } else if (user.role === "student") {
                     window.location.href = "/dashboard/student";
                 }

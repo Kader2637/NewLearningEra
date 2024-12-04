@@ -1,22 +1,25 @@
-import React from "react";
-import { Navigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import React, { useEffect } from "react";
 
 const PrivateRoute = ({ element, allowedRoles }) => {
-  const user = JSON.parse(localStorage.getItem("user"));
-  const authToken = localStorage.getItem("authToken");
+    const user = JSON.parse(localStorage.getItem("user"));
+    const authToken = localStorage.getItem("authToken");
 
-  if (!authToken || !user) {
-    toast.error("Anda belum login. Silakan login terlebih dahulu.");
-    return <Navigate to="/login" replace />;
-  }
+    useEffect(() => {
+        if (!authToken || !user) {
+            window.location.href = "/";
+        } else if (!allowedRoles.includes(user.role)) {
+            const roleBasedRedirect = {
+                admin: "/dashboard/admin",
+                teacher: "/dashboard/teacher",
+                student: "/dashboard/student",
+            };
 
-  if (!allowedRoles.includes(user.role)) {
-    toast.error("Anda tidak memiliki akses ke halaman ini.");
-    return <Navigate to="/" replace />;
-  }
+            const redirectPath = roleBasedRedirect[user.role] || "/";
+            window.location.href = redirectPath;
+        }
+    }, [authToken, user, allowedRoles]);
 
-  return element;
+    return element;
 };
 
 export default PrivateRoute;
