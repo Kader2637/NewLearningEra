@@ -8,4 +8,4 @@ const teacherTesting = () => {
   )
 }
 
-export default teacherTesting
+export default teacherTesting;
