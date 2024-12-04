@@ -93,21 +93,21 @@ const App = () => {
                                                     </>
                                                 ) : (
                                                     <li className="header-btn login-btn">
-                                                        <a href="/login">
+                                                        <NavLink to="/login">
                                                             Log in
-                                                        </a>
+                                                        </NavLink>
                                                     </li>
                                                 )}
                                             </ul>
                                         </div>
                                         <div className="mobile-login-btn">
-                                            <a href="/login">
+                                            <NavLink to="/login">
                                                 <img
                                                     src="assets/img/icons/user.svg"
                                                     alt=""
                                                     className="injectable"
                                                 />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="mobile-nav-toggler">
                                             <i className="tg-flaticon-menu-1"></i>
