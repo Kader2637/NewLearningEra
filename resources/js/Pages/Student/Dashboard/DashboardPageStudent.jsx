@@ -1,10 +1,10 @@
 import React from 'react'
-import ThumbnailStudent from './ThumbnailStudent'
+import CardPageStudent from './CardPageStudent'
 
 const DashboardPageStudent = () => {
   return (
     <div>
-        <ThumbnailStudent />
+        <CardPageStudent />
     </div>
   )
 }

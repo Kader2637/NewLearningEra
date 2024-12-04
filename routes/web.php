@@ -9,12 +9,23 @@ Route::get('/', function () {
 Route::get('/teacher', function () {
     return view('teacher');
 });
+
 Route::get('/admin', function () {
     return view('admin');
 });
 
-Route::get('/{any}', function () {
-    return view('welcome');
+Route::get('/student', function () {
+    return view('student');
+});
+
+
+Route::get('/{any}', function ($any) {
+    return match ($any) {
+        'teacher' => view('teacher'),
+        'admin' => view('admin'),
+        'student' => view('student'),
+        default => view('welcome'),
+    };
 })->where('any', '.*');
 
 
