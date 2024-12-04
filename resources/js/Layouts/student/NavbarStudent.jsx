@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Router from "../router/Index";
 import { NavLink } from "react-router-dom";
 
-const App = () => {
+const NavbarStudent = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userRole, setUserRole] = useState(null);
 
@@ -54,18 +53,8 @@ const App = () => {
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                             <ul className="navigation">
                                                 <li>
-                                                    <NavLink to="/">
-                                                        Home
-                                                    </NavLink>
-                                                </li>
-                                                <li>
-                                                    <NavLink to="/about">
-                                                        Tentang Kami
-                                                    </NavLink>
-                                                </li>
-                                                <li>
-                                                    <NavLink to="/course">
-                                                        Kelas
+                                                    <NavLink to="/student">
+                                                        Dashboard
                                                     </NavLink>
                                                 </li>
                                             </ul>
@@ -123,10 +112,8 @@ const App = () => {
                     </div>
                 </div>
             </header>
-
-            <Router />
         </div>
     );
 };
 
-export default App;
+export default NavbarStudent;

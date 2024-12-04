@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Router from "../router/Index";
+import Router from "../router/student";
 import { NavLink } from "react-router-dom";
 
-const App = () => {
+const RouterDataStudent = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userRole, setUserRole] = useState(null);
 
@@ -54,17 +54,12 @@ const App = () => {
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                             <ul className="navigation">
                                                 <li>
-                                                    <NavLink to="/">
-                                                        Home
+                                                    <NavLink to="/student">
+                                                        Dashboard
                                                     </NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink to="/about">
-                                                        Tentang Kami
-                                                    </NavLink>
-                                                </li>
-                                                <li>
-                                                    <NavLink to="/course">
+                                                    <NavLink to="/student/classroom">
                                                         Kelas
                                                     </NavLink>
                                                 </li>
@@ -74,16 +69,6 @@ const App = () => {
                                             <ul className="list-wrap">
                                                 {isLoggedIn ? (
                                                     <>
-                                                        <li className="header-btn login-btn">
-                                                            <button
-                                                                onClick={
-                                                                    navigateHome
-                                                                }
-                                                                className="btn btn-primary"
-                                                            >
-                                                                Masuk
-                                                            </button>
-                                                        </li>
                                                         <li className="header-btn login-btn">
                                                             <button
                                                                 onClick={
@@ -129,4 +114,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default RouterDataStudent;

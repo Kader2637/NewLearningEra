@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const CardPageStudent = () => {
     return (
         <div className="progress__courses-wrap">
             <div className="dashboard__content-title">
@@ -244,4 +244,4 @@ const Card = () => {
     );
 };
 
-export default Card;
+export default CardPageStudent;
