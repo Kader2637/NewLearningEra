@@ -1,4 +1,5 @@
 import React from 'react'
+import SidebarTeacher from '../Layouts/Teacher/SidebarTeacher';
 
 const teacher = () => {
     return (
@@ -8,7 +9,7 @@ const teacher = () => {
                     path="/teacher"
                     element={
                         <PrivateRoute
-                            element={<teacherTesting />}
+                            element={<SidebarTeacher />}
                             allowedRoles={["teacher"]}
                         />
                     }
