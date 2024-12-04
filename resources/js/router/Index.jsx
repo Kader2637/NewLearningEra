@@ -11,6 +11,7 @@ import DashboardPageStudent from "../Pages/Student/Dashboard/DashboardPageStuden
 import AboutPage from "../Pages/AboutUs/AboutPage";
 import HomePage from "../Pages/Home/HomePage";
 import RegisterTeacherPage from "../Pages/Auth/Register/TeacherPage/RegisterTeacherPage";
+import ClassroomPage from "../Pages/Student/Classroom/ClassroomPage";
 
 const Index = () => {
     return (
@@ -22,6 +23,7 @@ const Index = () => {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/course" element={<CoursePage />} />
                 <Route path="/register/teacher" element={<RegisterTeacherPage />} />
+                <Route path="/student/classroom" element={<ClassroomPage/>} />
                 <Route
                     path="/dashboard/student"
                     element={

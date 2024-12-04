@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Side = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(true);
@@ -30,9 +30,9 @@ const Side = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="student-profile.html">
-                                <i className="skillgro-avatar"></i> My Profile
-                            </a>
+                            <NavLink to="/student/classroom">
+                                <i className="skillgro-avatar"></i> Kelas
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
@@ -47,7 +47,7 @@ const Side = () => {
                                 onClick={handleLogout}
                                 style={{ cursor: "pointer" }}
                             >
-                                <i className="skillgro-logout"></i> Log out
+                                <i className="skillgro-logout"></i> Keluar
                             </a>
                         </li>
                     </ul>
